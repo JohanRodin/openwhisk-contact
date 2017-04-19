@@ -1,8 +1,8 @@
 console.log("OpenWhisk Action Fired!");
 
 let helper = require('sendgrid').mail;
-let SG_KEY = 'ADD SendGrid API Here'; //SendGrid API Key
-let to_email = new helper.Email('your-email@gmail.com'); //Add your email here
+let SG_KEY = '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'; //SendGrid API Key
+let to_email = new helper.Email('rodinjohan@gmail.com'); //Add your email here
 
 function main(params) {
     let subject = `OpenWhiskContact FROM: ${params["myName"]}`;
