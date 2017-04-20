@@ -47,7 +47,7 @@ angular.module('ngWhisk')
                     $scope.alerts = [
                         {type: 'danger', msg: ''}
                     ];
-                    $scope.alerts[0].msg = JSON.stringify(response.status)
+                    $scope.alerts[0].msg = JSON.stringify(response.status);
                     //$scope.alerts[0].msg = 'Oops there was a problem sending your request, please contact Twana Daniel at twanaazi@ie.ibm.com';
                 });
         };
