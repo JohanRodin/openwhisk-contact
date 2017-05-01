@@ -2,7 +2,7 @@ applications:
 - disk_quota: 1024M
   name: pipeline-forms-app
   command: node app.js
-  path: .
+  path: ./app
   instances: 1
   memory: 512M
   host: pipeline-forms-app-20170501-jrs
