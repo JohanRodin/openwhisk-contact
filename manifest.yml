@@ -6,4 +6,4 @@ applications:
   instances: 1
   memory: 512M
   host: pipeline-forms-app-20170501-jrs
-  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
