@@ -40,15 +40,15 @@ angular.module('ngWhisk')
                     // called asynchronously if an error occurs
                     // or server returns response with an error status.
                     $log.log("Error occurred with status: " + '' + JSON.stringify(response.status));
-                    //$scope.alerts[0].msg = JSON.stringify(response.status);
+                    $scope.alerts[0].msg = JSON.stringify(response.status);
                     $scope.emailSent = true;
 
                     // if there was an error, then display this message
                     $scope.alerts = [
                         {type: 'danger', msg: ''}
                     ];
-                    $scope.alerts[0].msg = JSON.stringify(response.status);
-                    //$scope.alerts[0].msg = 'Oops there was a problem sending your request, please contact Twana Daniel at twanaazi@ie.ibm.com';
+                    //$scope.alerts[0].msg = JSON.stringify(response.status);
+                    $scope.alerts[0].msg = 'Oops! There was a problem sending your request, please contact Johan Rodin directly at johan.rodin@se.ibm.com';
                 });
         };
 
