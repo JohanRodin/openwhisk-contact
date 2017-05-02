@@ -1,4 +1,8 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohanRodin/openwhisk-contact.git"
+  },
   "dependencies": 
     {
       "connect": "^2.0.0",
