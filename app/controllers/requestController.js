@@ -17,7 +17,7 @@ angular.module('ngWhisk')
             var config = {
                 headers : {
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;',
-                    'Access-Control-Allow-Origin': 'http://pipeline-forms-app-20170501-jrs.eu-gb.mybluemix.net'
+                    'Access-Control-Allow-Origin': '6e28847c-de9b-4446-8207-c2fadad1d143-gws.api-gw.mybluemix.net'
                 }
             };
             // Simple POST request example (passing data) :
