@@ -17,7 +17,7 @@ angular.module('ngWhisk')
             var config = {
                 headers : {
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;',
-                    'Access-Control-Allow-Origin': '*.mybluemix.net',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'True',
                     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
                 }
