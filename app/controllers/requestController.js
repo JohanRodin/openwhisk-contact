@@ -46,6 +46,8 @@ angular.module('ngWhisk')
                         $scope.alerts[0].msg = JSON.stringify(response.status);
                     } else {
                     // alerts is still null
+                        $scope.alerts = [ {type: 'danger', msg: ''} ];
+                        $scope.alerts[0].msg = JSON.stringify(response.status);
                     }
                     
                     $scope.emailSent = true;
