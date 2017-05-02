@@ -43,20 +43,16 @@ angular.module('ngWhisk')
                     $log.log("Error occurred with status: " + '' + JSON.stringify(response.status));
                     if ($scope.alerts) {
                     // alerts have value
+                         // if there was an error, then display this message
                         $scope.alerts[0].msg = JSON.stringify(response.status);
                     } else {
                     // alerts is still null
+                         // if there was an error, then display this message
                         $scope.alerts = [ {type: 'danger', msg: ''} ];
                         $scope.alerts[0].msg = JSON.stringify(response.status);
                     }
                     
                     $scope.emailSent = true;
-
-                    // if there was an error, then display this message
-                    $scope.alerts = [
-                        {type: 'danger', msg: ''}
-                    ];
-                    //$scope.alerts[0].msg = JSON.stringify(response.status);
                     $scope.alerts[0].msg = 'Oops! There was a problem sending your request, please contact Johan Rodin directly at johan.rodin@se.ibm.com';
                 });
         };
