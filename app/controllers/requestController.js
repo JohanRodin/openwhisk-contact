@@ -41,7 +41,13 @@ angular.module('ngWhisk')
                     // called asynchronously if an error occurs
                     // or server returns response with an error status.
                     $log.log("Error occurred with status: " + '' + JSON.stringify(response.status));
-                    $scope.alerts[0].msg = JSON.stringify(response.status);
+                    if ($scope.alerts) {
+                    // alerts have value
+                        $scope.alerts[0].msg = JSON.stringify(response.status);
+                    } else {
+                    // alerts is still null
+                    }
+                    
                     $scope.emailSent = true;
 
                     // if there was an error, then display this message
