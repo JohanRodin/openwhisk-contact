@@ -17,7 +17,7 @@ angular.module('ngWhisk')
             var config = {
                 headers : {
                     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;',
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': 'https://6e28847c-de9b-4446-8207-c2fadad1d143-gws.api-gw.mybluemix.net/OpenWhiskContact/api/v1'
                 }
             };
             // Simple POST request example (passing data) :
