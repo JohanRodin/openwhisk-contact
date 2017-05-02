@@ -1,7 +1,4 @@
 {
-  "name": "cloudant_boilerplate_nodejs",
-  "version": "0.0.2",
-  "private": true,
   "scripts": {
     "start": "node server.js"
 },
