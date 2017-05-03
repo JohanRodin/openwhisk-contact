@@ -6,7 +6,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
-  -webkit-text-size-adjust: 99%;
+  -webkit-text-size-adjust: 99;
   -ms-text-size-adjust: 100%;
 }
 body {
