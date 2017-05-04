@@ -1,7 +1,7 @@
 angular.module('ngWhisk')
     .controller('requestController', function($scope, $http, $log, $rootScope, ngDialog) {
         $log.log('inside');
-        var API_URL = $scope.process.env.OWAPI; // OpenWhisk exposed API
+        var API_URL = $rootScope.process.env.OWAPI; // OpenWhisk exposed API
         $scope.emailSent = false; // setting message logic to false not display any message by default
 
         $scope.sendMail = function () { //The send button will call this method to make an API to a OpenWhisk Action exposed as a API
