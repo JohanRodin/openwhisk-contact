@@ -6,10 +6,7 @@ var port = (process.env.VCAP_APP_PORT || 3000);
 
 var host = (process.env.VCAP_APP_HOST || 'localhost');
 
-connect()
-  .use(serveStatic(__dirname)).listen(port,host)
-  .use(function(req, res){
-
+connect().use(function(req, res){
     res.setHeader("Access-Control-Allow-Origin", "*");
-
  });
+connect().use(serveStatic(__dirname)).listen(port,host);
