@@ -12,6 +12,7 @@
     "start": "node server.js"
   },
   "engines": { 
-    "node" : "4.12.x" 
+    "node": ">=4.12.x",
+    "npm": ">=3.0.x" 
   } 
 }
