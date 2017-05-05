@@ -19,7 +19,7 @@ angular.module('ngWhisk')
                 headers : {
                     //'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
                     'Content-Type': 'application/json;charset=UTF-8;',
-                    'Accept: application/json' 
+                    'Accept': 'application/json' 
                 }
             };
             // Simple POST request example (passing data) :
