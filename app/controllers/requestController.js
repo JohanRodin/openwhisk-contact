@@ -16,12 +16,13 @@ angular.module('ngWhisk')
             };
             // adding content type for post header, this is needed for when calling OpenWhisk API
             var config = {
-                headers : {
+                headers: { accept: 'application/json' } };
+                //headers : {
                     //'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
-                    'Content-Type': 'application/json;charset=UTF-8;',
-                    'Accept': 'application/json' 
-                }
-            };
+                  //  'Content-Type': 'application/json;charset=UTF-8;',
+                  //  'Accept': 'application/json' 
+                //}
+            //};
             // Simple POST request example (passing data) :
             $http.post(API_URL, data, config)
                 .then(function(response) {
