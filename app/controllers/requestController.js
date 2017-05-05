@@ -1,7 +1,7 @@
 angular.module('ngWhisk')
     .controller('requestController', function($scope, $http, $log, $rootScope, ngDialog) {
         $log.log('inside');
-        var API_URL = 'https://service.us.apiconnect.ibmcloud.com/gws/apigateway/api/b2844128c00ef617cbec07a2c205b9d411c2d31da094f2120c9054289445ee2f/OpenWhiskContact/api/v1'
+        var API_URL = 'https://service.us.apiconnect.ibmcloud.com/gws/apigateway/api/b2844128c00ef617cbec07a2c205b9d411c2d31da094f2120c9054289445ee2f/OpenWhiskContact/api/v1';
         //var API_URL = 'https://6e28847c-de9b-4446-8207-c2fadad1d143-gws.api-gw.mybluemix.net/OpenWhiskContact/api/v1'; //$rootScope.process.env.OWAPI; // OpenWhisk exposed API
         $scope.emailSent = false; // setting message logic to false not display any message by default
 
