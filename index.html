@@ -36,13 +36,13 @@
                         <a href="#"><img id="about" src="./icons/bluemix_logo.svg"></a>
                     </div>
                     <div class="row-details">
-                        <p class="list-group-item-text">IBM Bluemix | OpenWhisk</p>
+                        <p class="list-group-item-text">IBM Bluemix | Open Workshops</p>
                     </div>
                 </div>
                 <div class="header02">
                     <div class="social-icons">
-                        <a class="icon" target="_blank" href="https://www.ibm.com/blogs/bluemix/2017/03/form-processing-ibm-bluemix-openwhisk/" ><i class="fa fa-file-text"></i></a>
-                        <a class="icon" target="_blank" href="https://github.com/IBM-Bluemix/OpenWhiskContact" ><i class="fa fa-github"></i></a>
+                        <a class="icon" target="_blank" href="https://www.ibm.com/blogs/bluemix/2017/" ><i class="fa fa-file-text"></i></a>
+                        <a class="icon" target="_blank" href="https://github.com/JohanRodin/OpenWhiskContact" ><i class="fa fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -52,27 +52,24 @@
 
     <!-- Loading the view -->
     <div class="page-container" style="background: #1fbda6 url(lead-21.jpeg) center center / cover no-repeat; min-height: 320px;">
-        <h2>OpenWhisk Form Processing</h2>
-        <p>Process a contact form without the need of a backend with using <a href="https://console.ng.bluemix.net/openwhisk/" target="_blank">IBM Bluemix OpenWhisk</a></p><br><br><br>
-        <h4>Built using the IBM Bluemix, the application uses:</h4>
+        <h2><font color="white">Open Workshop Agenda</font></h2>
+        <p><font color="white"> TEXT </font><a href="https://console.ng.bluemix.net/openwhisk/" target="_blank">IBM Bluemix OpenWhisk</a></p><br><br><br>
+        <h4><font color="white">Built using the IBM Bluemix, the application uses:</font></h4>
         <p>
             IBM Bluemix OpenWhisk to host the API<br>
-            Angulrs.js app hosted on GitHub<br>
+            Angulrs.js app hosted on Bluemix<br>
             <a href="https://sendgrid.com/" target="_blank">SendGrid</a> Email API<br>
         </p>
 
         <button type="button" ng-dialog="firstDialogId" ng-dialog-controller="InsideCtrl" ng-dialog-data="{{jsonData}}"
                 ng-dialog-class="ngdialog-theme-default" ng-dialog-show-close="false">Register Now
         </button><br><br><br><br><br><br>
-        <h5>Learn more on
-            <a class="" target="_blank" href="https://github.com/IBM-Bluemix/OpenWhiskContact" >{ GitHub <i class="fa fa-github"></i> } </a>
-        </h5>
     </div>
 
 
     <div class="rowFooter">
         <footer>
-            Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://twitter.com/twanawebtech" target="_blank">{ @twanawebtech }</a>
+            Made with by <a href="https://twitter.com/JohanNRodin" target="_blank">{ @johannrodin }</a>
         </footer>
     </div>
 
@@ -81,7 +78,7 @@
     <script type="text/ng-template" id="firstDialogId">
         <div class="ngdialog-message">
             <h3>Feedback</h3>
-            <p ng-show="theme">Let us know how you find this code sample</p>
+            <p ng-show="theme">Register for the next open lab day in Kista</p>
         </div>
         <div class="RequestForm" ng-controller="requestController">
             <form name="myForm" ng-submit="sendMail()">
@@ -100,7 +97,7 @@
                     <div ng-messages="myForm.myUrl.$error">
                         <div ng-message="required">This field is required</div>
                     </div>
-                    <input type="text" name="myUrl" ng-model="myUrl" placeholder="Your Website *" required/><br>
+                    <input type="text" name="myUrl" ng-model="myUrl" placeholder="Your company/organization *" required/><br>
 
                     <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Description"
                               class="myDescription"></textarea>
