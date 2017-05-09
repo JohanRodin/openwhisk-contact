@@ -288,6 +288,7 @@ footer {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 4rem;
+  left: 0;
 }
 .contactBack a{
   display: inline-block;
