@@ -26,7 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
 </head>
 
-<body class="home overflow-hidden">
+<body class="home overflow-hidden" background="sthlm.jpeg">
 
     <!-- Top header blue line -->
     <div class="header-panel shadow-z-2">
@@ -55,12 +55,7 @@
     <div class="page-container" style="background: #1fbda6 url(lead-21.jpeg) center center / cover no-repeat; min-height: 320px;">
         <h2><font color="white">Open Workshop Agenda</font></h2>
         <p><font color="white"> TEXT </font><a href="https://console.ng.bluemix.net/openwhisk/" target="_blank">IBM Bluemix OpenWhisk</a></p><br><br><br>
-        <h4><font color="white">Built using the IBM Bluemix, the application uses:</font></h4>
-        <p>
-            IBM Bluemix OpenWhisk to host the API<br>
-            Angulrs.js app hosted on Bluemix<br>
-            <a href="https://sendgrid.com/" target="_blank">SendGrid</a> Email API<br>
-        </p>
+        
 
         <button type="button" ng-dialog="firstDialogId" ng-dialog-controller="InsideCtrl" ng-dialog-data="{{jsonData}}"
                 ng-dialog-class="ngdialog-theme-default" ng-dialog-show-close="false">Register Now
