@@ -53,9 +53,10 @@
 
     <!-- Loading the view -->
     <div class="page-container" style="background: #1fbda6 url(lead-21.jpeg) center center / cover no-repeat; min-height: 320px;">
-        <div align="left">
-        <h2><font color="white">Develop your first Bluemix App           { May 30th and June 27th }</font></h2>
-            <div><font color="white">
+        <div class="myclass" align="left">
+        <h2><font color="white">Develop your first Bluemix App May { 30th and June 27th }</font></h2>
+            
+                <font color="white">
                 IBM Client Center , Kista Alléväg 60, Kista<br>
                 Free hands-on workshop <br>
                 <ul>
@@ -63,35 +64,26 @@
                     <li>See how to leverage the full capabilities of the Bluemix catalog and utilize the micro-services availible.<br></li>
                     <li>Ask any questions you have about cloud application development.  <br></li>
                 </ul>  
+                
                 </font>
-            </div>
-        <p align="left"><font color="white">  
             <br>
-          <p>  <h3>Open Workshop Agenda<h3/><br>
+            
+            
+          <h3>Open Workshop Agenda</h3><br>
             
             <br>
-              <!--If we are doing morning sessions only! -->
-         <!--08:45-09:00 Registration and coffee is served <br>-->
-         <!--09:00-09:15 Presentation of Bluemix and walkthrough of the three labs <br>-->
-         <!--09:15-10:00 Lab 1: Gather Internet of Things sensor data in Bluemix using Node-RED <br>-->
-         <!--10:00-10:10 Break <br>-->
-         <!--10:10-11:00 Lab 2: Create a To-Do-List App wit database connection in Node.js <br>-->
-         <!--11:00-12:00 Lab 3: Add a Watson service to an App <br>-->
-         
+           
           <ul>     
-         <li>Registration and coffee is served (15 min)<br></li>
-         <li>Presentation of Bluemix and walkthrough of the three labs (15 min) <br></li>
-         <li>Lab 1: Gather Internet of Things sensor data in Bluemix using Node-RED (45 min)<br></li>
-         <li>Break (10 min)<br></li>
-         <li>Lab 2: Create a To-Do-List App wit database connection in Node.js (50 min) <br></li>
-         <li>Lab 3: Add a Watson service to an App (45 min)<br></li>
-         <li>Summary and concluding comments (15 min)<br></li>
-              </ul>  
-            
-   
-            
-        </font>
-        
+            <li>Registration and coffee is served (15 min)<br></li>
+            <li>Presentation of Bluemix and walkthrough of the three labs (15 min) <br></li>
+            <li>Lab 1: Gather Internet of Things sensor data in Bluemix using Node-RED (45 min)<br></li>
+            <li>Break (10 min)<br></li>
+            <li>Lab 2: Create a To-Do-List App wit database connection in Node.js (50 min) <br></li>
+            <li>Lab 3: Add a Watson service to an App (45 min)<br></li>
+            <li>Summary and concluding comments (15 min)<br></li>
+          </ul>  
+              
+          
             <br><br><br>
         
 
@@ -122,24 +114,24 @@
                     <div ng-messages="myForm.myName.$error">
                         <div ng-message="required">This field is required</div>
                     </div>
-                    <input type="text" name="myName" ng-model="myName" placeholder="Name *" required/><br>
+                    <input type="text" name="myName" ng-model="myName" placeholder="Your Name *" required/><br>
 
                     <div ng-messages="myForm.myEmail.$error">
                         <div ng-message="required">This field is required</div>
                         <div ng-message="email">Your email address is invalid</div>
                     </div>
-                    <input type="email" name="myEmail" ng-model="myEmail" placeholder="Email *" required/><br>
+                    <input type="email" name="myEmail" ng-model="myEmail" placeholder="Your Email *" required/><br>
 
                     <div ng-messages="myForm.myUrl.$error">
                         <div ng-message="required">This field is required</div>
                     </div>
                     <input type="text" name="myUrl" ng-model="myUrl" placeholder="Your company/organization *" required/><br>
 
-<div ng-messages="myForm.myDate.$error">
-    <div ng-message="required">This field is required</div>
-</div>
-<select name="myDate" ng-model="myDate" placeholder="Choose a workshop date" ng-options="x for x in dates">
-</select><br>
+                    <div ng-messages="myForm.myDate.$error">
+                        <div ng-message="required">This field is required</div>
+                    </div>
+                    <select name="myDate" ng-model="myDate" placeholder="Choose a workshop date" ng-options="x for x in dates">
+                    </select><br>
 
 
                     <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Put any comments to the organizer here, please!"
