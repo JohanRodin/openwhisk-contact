@@ -129,10 +129,10 @@
 <div ng-messages="myForm.myDate.$error">
     <div ng-message="required">This field is required</div>
 </div>
-<select ng-model="myDate" ng-options="x for x in dates">
-</select>
+<select name="myDate" ng-model="myDate" placeholder="Choose a workshop date" ng-options="x for x in dates">
+</select><br>
 
-</div>
+
                     <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Put any comments to the organizer here, please!"
                               class="myDescription"></textarea>
                 </div>
