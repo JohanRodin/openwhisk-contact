@@ -126,6 +126,13 @@
                     </div>
                     <input type="text" name="myUrl" ng-model="myUrl" placeholder="Your company/organization *" required/><br>
 
+<div ng-messages="myForm.myDate.$error">
+    <div ng-message="required">This field is required</div>
+</div>
+<select ng-model="myDate" ng-options="x for x in dates">
+</select>
+
+</div>
                     <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Put any comments to the organizer here, please!"
                               class="myDescription"></textarea>
                 </div>
