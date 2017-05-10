@@ -74,6 +74,14 @@ angular.module('ngWhisk')
         $rootScope.jsonData = '{"foo": "bar"}';
         $rootScope.theme = 'ngdialog-theme-default';
         $scope.open = function () {
+            $scope.dates = [ 
+                    {name:'black', shade:'dark'},
+                    {name:'white', shade:'light'},
+                    {name:'red', shade:'dark'},
+                    {name:'blue', shade:'dark'},
+                    {name:'yellow', shade:'light'}
+            ];
+            $scope.myDate = $scope.dates[2]; // red
             ngDialog.open({ template: 'firstDialogId', controller: 'InsideCtrl' });
         };
 
