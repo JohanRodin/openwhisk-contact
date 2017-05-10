@@ -1,6 +1,6 @@
 angular.module('ngWhisk')
     .controller('requestController', function($scope, $http, $log, $rootScope, ngDialog) {
-        $log.log('inside');
+        //$log.log('inside');
         var API_URL = 'https://service.us.apiconnect.ibmcloud.com/gws/apigateway/api/b2844128c00ef617cbec07a2c205b9d411c2d31da094f2120c9054289445ee2f/OpenWhiskContact/api/v1';
         //var API_URL = 'https://6e28847c-de9b-4446-8207-c2fadad1d143-gws.api-gw.mybluemix.net/OpenWhiskContact/api/v1'; //$rootScope.process.env.OWAPI; // OpenWhisk exposed API
         $scope.emailSent = false; // setting message logic to false not display any message by default
@@ -29,7 +29,7 @@ angular.module('ngWhisk')
                 .then(function(response) {
                     // this callback will be called asynchronously
                     // when the response is available
-                    $log.log('Email Sent with response status of: ' + JSON.stringify(response.status));
+                    //$log.log('Email Sent with response status of: ' + JSON.stringify(response.status));
                     $scope.emailSent = true;
 
                     // Injecting success into the array of alerts
@@ -74,14 +74,6 @@ angular.module('ngWhisk')
         $rootScope.jsonData = '{"foo": "bar"}';
         $rootScope.theme = 'ngdialog-theme-default';
         $scope.open = function () {
-            $scope.dates = [ 
-                    {name:'black', shade:'dark'},
-                    {name:'white', shade:'light'},
-                    {name:'red', shade:'dark'},
-                    {name:'blue', shade:'dark'},
-                    {name:'yellow', shade:'light'}
-            ];
-            $scope.myDate = $scope.dates[2]; // red
             ngDialog.open({ template: 'firstDialogId', controller: 'InsideCtrl' });
         };
 
@@ -120,6 +112,16 @@ angular.module('ngWhisk')
 angular
     .module('ngWhisk')
     .controller('InsideCtrl', function ($scope, ngDialog) {
+    
+     $scope.dates = [ 
+                    {name:'black', shade:'dark'},
+                    {name:'white', shade:'light'},
+                    {name:'red', shade:'dark'},
+                    {name:'blue', shade:'dark'},
+                    {name:'yellow', shade:'light'}
+            ];
+            $scope.myDate = $scope.dates[2]; // red
+    
         $scope.openSecond = function () {
             ngDialog.open({
                 template: '<h3><a href="" ng-click="closeSecond()">Close all by click here!</a></h3>',
