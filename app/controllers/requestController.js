@@ -12,6 +12,7 @@ angular.module('ngWhisk')
                 myName: $scope.myName,
                 myEmail: $scope.myEmail,
                 myUrl: $scope.myUrl,
+                myDate: $scope.myDate,
                 myDescription: $scope.myDescription
             };
             // adding content type for post header, this is needed for when calling OpenWhisk API
@@ -39,6 +40,7 @@ angular.module('ngWhisk')
                     $scope.myName = "";
                     $scope.myEmail = "";
                     $scope.myUrl = "";
+                    $scope.myDate = "";
                     $scope.myDescription = "";
                 }, function(response) {
                     // called asynchronously if an error occurs
