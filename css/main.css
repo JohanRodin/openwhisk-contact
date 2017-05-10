@@ -189,6 +189,7 @@ footer {
   right: 0px;
   background-color: rgb(238, 239, 242);
   background-size: cover;
+  background-repeat:repeat-X;
   color: #888;
   text-align: center;
   height: 100px;
