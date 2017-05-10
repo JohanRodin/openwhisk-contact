@@ -188,7 +188,7 @@ footer {
   bottom: 0px;
   right: 0px;
   background-color: rgb(238, 239, 242);
-  background: url(skyline.png);
+  background: url(../skyline.png);
   background-repeat:repeat-x;
   color: #888;
   text-align: center;
