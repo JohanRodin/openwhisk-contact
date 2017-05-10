@@ -114,11 +114,11 @@ angular
     .controller('InsideCtrl', function ($scope, ngDialog) {
     
      $scope.dates = [ 
-                    {name:'black', shade:'dark'},
-                    {name:'white', shade:'light'},
-                    {name:'red', shade:'dark'},
-                    {name:'blue', shade:'dark'},
-                    {name:'yellow', shade:'light'}
+                    {name:'black', value:'dark'},
+                    {name:'white', value:'light'},
+                    {name:'red', value:'dark'},
+                    {name:'blue', value:'dark'},
+                    {name:'yellow', value:'light'}
             ];
             $scope.myDate = $scope.dates[2]; // red
     
