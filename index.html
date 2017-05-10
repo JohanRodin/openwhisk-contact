@@ -130,7 +130,7 @@
                     <div ng-messages="myForm.myDate.$error">
                         <div ng-message="required">This field is required</div>
                     </div>
-                    <select name="myDate" required="required" ng-model="myDate" ng-options="x.names for x in dates">
+                    <select name="myDate" required="required" ng-model="myDate" ng-options="x.value as x.name for x in dates">
                     </select><br><br>
 
 
