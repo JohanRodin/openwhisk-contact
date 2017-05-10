@@ -258,7 +258,7 @@ footer {
 }
 
 .RequestForm textarea{
-  height: 220px;
+  height: 100px;
   border-radius: 0px;
   background: #ebf0f7;
 }
