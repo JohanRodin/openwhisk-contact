@@ -37,11 +37,11 @@ angular.module('ngWhisk')
                     $scope.alerts[0].msg = 'Thanks, ' + $scope.myName + ' we have got your request, and we will be in touch. ';
 
                     // After user sent the email, then clear the values to be empty
-                    $scope.myName = "";
-                    $scope.myEmail = "";
-                    $scope.myUrl = "";
-                    $scope.myDate = "";
-                    $scope.myDescription = "";
+                    //$scope.myName = "";
+                    //$scope.myEmail = "";
+                    //$scope.myUrl = "";
+                    //$scope.myDate = "";
+                    //$scope.myDescription = "";
                 }, function(response) {
                     // called asynchronously if an error occurs
                     // or server returns response with an error status.
