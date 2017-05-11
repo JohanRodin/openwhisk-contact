@@ -86,20 +86,20 @@
            </font>
             <br>
         
- </div>
+     </div>
         <button type="button" ng-dialog="firstDialogId" ng-dialog-controller="InsideCtrl" ng-dialog-data="{{jsonData}}"
                 ng-dialog-class="ngdialog-theme-default" ng-dialog-show-close="false">Register Now
         </button><br><br><br><br><br><br>
      
-    </div>
+    
 
 
     <div class="rowFooter">
         <footer>
-            <!-- <img src="skyline.png"/> -->
             Made by <a href="https://twitter.com/JohanNRodin" target="_blank">{ @johannrodin }</a>
         </footer>
     </div>
+  </div>
 
 
     <!-- ng-Dialog Popup -->
@@ -114,25 +114,25 @@
                     <div ng-messages="myForm.myName.$error">
                         <div ng-message="required">This field is required</div>
                     </div>
-                    <input type="text" name="myName" ng-model="myName" placeholder="Your Name *" required/><br>
+                    <input type="text" name="myName" ng-model="myName" placeholder="Your Name *" required/>
 
                     <div ng-messages="myForm.myEmail.$error">
                         <div ng-message="required">This field is required</div>
                         <div ng-message="email">Your email address is invalid</div>
                     </div>
-                    <input type="email" name="myEmail" ng-model="myEmail" placeholder="Your Email *" required/><br>
+                    <input type="email" name="myEmail" ng-model="myEmail" placeholder="Your Email *" required/>
 
                     <div ng-messages="myForm.myUrl.$error">
                         <div ng-message="required">This field is required</div>
                     </div>
-                    <input type="text" name="myUrl" ng-model="myUrl" placeholder="Your company/organization *" required/><br>
+                    <input type="text" name="myUrl" ng-model="myUrl" placeholder="Your company/organization *" required/>
 
                     <div ng-messages="myForm.myDate.$error">
                         <div ng-message="required">This field is required</div>
                     </div>
                     <select name="myDate" required="required" ng-model="myDate" ng-options="option.value as option.name for option in dates">
                         <option value="">Select a workshop date</option>         
-                    </select><br><br>
+                    </select><br>
 
 
                     <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Put any comments to the organizer here, please!"
