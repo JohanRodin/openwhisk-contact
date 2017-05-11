@@ -132,7 +132,7 @@
                     </div>
                     <select name="myDate" required="required" ng-model="myDate" ng-options="option.value as option.name for option in dates">
                         <option value="">Select a workshop date</option>         
-                    </select><br>
+                    </select><br><br>
 
 
                     <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Put any comments to the organizer here, please!"
@@ -140,6 +140,13 @@
                 </div>
 
                 <div class="form-group-popup">
+                
+                <div class="messageContact" ng-show="emailSent">
+                        <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')"
+                             close="closeAlert($index)" class="alert">{{alert.msg}}
+                        </div>
+                    </div>
+                    
                     <div class="ngdialog-buttons">
                         <button type="button" class="ngdialog-button ngdialog-button-cancel"
                                 ng-click="closeThisDialog()">Close
@@ -149,11 +156,7 @@
                         </button>
 
                     </div>
-                    <div class="messageContact" ng-show="emailSent">
-                        <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')"
-                             close="closeAlert($index)" class="alert">{{alert.msg}}
-                        </div>
-                    </div>
+                    
                 </div>
             </form>
         </div>
