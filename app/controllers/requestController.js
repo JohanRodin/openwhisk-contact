@@ -114,7 +114,6 @@ angular
     .controller('InsideCtrl', function ($scope, ngDialog) {
     
      $scope.dates = [
-                    {name:'Tuesday, June 27th 2017 breakfast, from 9 am to noon', value:'Open Lab on June 27th, f m'},
                     {name:'Friday, Aug 25th 2017 breakfast, from 9 am to noon', value:'Open Lab on Aug 25th, f m'},
                     {name:'Friday, Sep 29th 2017 breakfast, from 9 am to noon', value:'Open Lab on Sep 25th, f m'},
                     {name:'Wednesday, Oct 25th 2017 afternoon, from 1 pm to 4 pm', value:'Open Lab on Oct 25th, e m'}
