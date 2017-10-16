@@ -114,8 +114,7 @@ angular
     .controller('InsideCtrl', function ($scope, ngDialog) {
     
      $scope.dates = [
-                    {name:'Friday, Sep 29th 2017 breakfast, from 9 am to noon', value:'Open Lab on Sep 29th, f m'},
-                    {name:'Wednesday, Oct 25th 2017 afternoon, from 1 pm to 4 pm', value:'Open Lab on Oct 25th, e m'}
+                    {name:'Wednesday, Oct 25th 2017 afternoon, from 1 pm to 4 pm', value:'Open Lab on Oct 25th, afternoon'}
             ];
             $scope.myDate = $scope.dates[0]; // default next workshop date = first in the list
     
